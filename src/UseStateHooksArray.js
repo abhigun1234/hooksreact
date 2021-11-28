@@ -3,7 +3,10 @@ import React, { useState } from 'react';
 function UseStateHooksArray(props) {
     const [personInfo, setPersonInfo] = useState([
         { name: 'abhi', email: 'abhi@gmail.com',phone:'8888888' }, 
-    { name: 'ravi', email: 'ravi@gmail.com' ,phone:'8888888'},{ name: 'ram', email: 'ram@gmail.com' ,phone:'8888888'}])
+    { name: 'ravi', email: 'ravi@gmail.com' ,phone:'8888888'},
+    { name: 'ram', email: 'ram@gmail.com' ,phone:'8888888'},
+    { name: 'neha', email: 'neha@gmail.com' ,phone:'8888888'},
+    { name: 'priyanka', email: 'priyanka@gmail.com' ,phone:'8888888'}])
     return (
         <div>
             {personInfo.map(person =>

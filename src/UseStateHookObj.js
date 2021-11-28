@@ -15,6 +15,10 @@ function UseStateHookObj(props) {
 
 
   }
+  function gender(e){
+
+
+  }
     return (
         <div>
             <input onChange={setFirstName} type="text" value={person.firstName} placeholder="enter your name"></input>

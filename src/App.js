@@ -9,13 +9,17 @@ import UseStateHooksArray from './UseStateHooksArray';
 import UseEffectHook from './UseEffectHook';
 import HooksApicourse from './HooksApicourse';
 import HooksStateDemo from './HooksStateDemo';
+import Counter from './Counter';
+import HoksObj from './HoksObj';
+import StateDemoClass from './StateDemoClass';
+import ChangeState from './ChangeState';
 function App() {
   return (
     <div className="App">
       {/* <UseStateHookDemo></UseStateHookDemo>       */}
       {/* <UseStateHookObj></UseStateHookObj> */}
       {/* <HooksDemoCounter></HooksDemoCounter> */}
-      <HooksApicourse></HooksApicourse>
+      <UseStateHooksArray></UseStateHooksArray>
       {/* <UseStateHooksArray></UseStateHooksArray> */}
       {/* <HooksStateDemo></HooksStateDemo> */}
     </div>
