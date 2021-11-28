@@ -19,7 +19,7 @@ function App() {
       {/* <UseStateHookDemo></UseStateHookDemo>       */}
       {/* <UseStateHookObj></UseStateHookObj> */}
       {/* <HooksDemoCounter></HooksDemoCounter> */}
-      <UseStateHooksArray></UseStateHooksArray>
+      <UseEffectHook></UseEffectHook>
       {/* <UseStateHooksArray></UseStateHooksArray> */}
       {/* <HooksStateDemo></HooksStateDemo> */}
     </div>

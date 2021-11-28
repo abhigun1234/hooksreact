@@ -16,7 +16,10 @@ function UseEffectApi(props) {
         <div>
             < ul>{
                 courses.map(course =>
-                    <li>{course.name}</li>
+                    <div>
+                    <li>{course.fees}</li>
+                  
+                    </div>
                 )
             }</ul>
         </div>
