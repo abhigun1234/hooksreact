@@ -30,7 +30,8 @@ function App() {
       {/* <Refs></Refs> */}
       {/* <UseMemoDemo></UseMemoDemo> */}
       {/* <RefsDemo></RefsDemo> */}
-      <Refs></Refs>
+      {/* <Refs></Refs> */}
+      <UsereducerHooks></UsereducerHooks>
     </div>
   );
 }
