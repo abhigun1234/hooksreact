@@ -13,15 +13,24 @@ import Counter from './Counter';
 import HoksObj from './HoksObj';
 import StateDemoClass from './StateDemoClass';
 import ChangeState from './ChangeState';
+import UsereducerHooks from './UsereducerHooks';
+import Refs from './Refs';
+import UseMemoDemo from './UseMemoDemo';
+import RefsDemo from './RefsDemo';
 function App() {
   return (
     <div className="App">
       {/* <UseStateHookDemo></UseStateHookDemo>       */}
       {/* <UseStateHookObj></UseStateHookObj> */}
       {/* <HooksDemoCounter></HooksDemoCounter> */}
-      <UseEffectHook></UseEffectHook>
+      {/* <UseEffectHook></UseEffectHook> */}
       {/* <UseStateHooksArray></UseStateHooksArray> */}
       {/* <HooksStateDemo></HooksStateDemo> */}
+      {/* <UsereducerHooks></UsereducerHooks> */}
+      {/* <Refs></Refs> */}
+      {/* <UseMemoDemo></UseMemoDemo> */}
+      {/* <RefsDemo></RefsDemo> */}
+      <Refs></Refs>
     </div>
   );
 }
