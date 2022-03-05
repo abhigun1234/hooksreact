@@ -17,6 +17,7 @@ import UsereducerHooks from './UsereducerHooks';
 import Refs from './Refs';
 import UseMemoDemo from './UseMemoDemo';
 import RefsDemo from './RefsDemo';
+import Parent from './Parent';
 function App() {
   return (
     <div className="App">
@@ -31,7 +32,9 @@ function App() {
       {/* <UseMemoDemo></UseMemoDemo> */}
       {/* <RefsDemo></RefsDemo> */}
       {/* <Refs></Refs> */}
-      <UsereducerHooks></UsereducerHooks>
+      {/* <UsereducerHooks></UsereducerHooks> */}
+      <Parent></Parent>
+      {/* <UseMemoDemo></UseMemoDemo> */}
     </div>
   );
 }
