@@ -19,6 +19,9 @@ import UseMemoDemo from './UseMemoDemo';
 import RefsDemo from './RefsDemo';
 import Parent from './Parent';
 function App() {
+  function hello(){
+    alert("hello")
+  }
   return (
     <div className="App">
       {/* <UseStateHookDemo></UseStateHookDemo>       */}
@@ -33,8 +36,12 @@ function App() {
       {/* <RefsDemo></RefsDemo> */}
       {/* <Refs></Refs> */}
       {/* <UsereducerHooks></UsereducerHooks> */}
-      <Parent></Parent>
+      {/* <Parent></Parent> */}
       {/* <UseMemoDemo></UseMemoDemo> */}
+      {/* <Counter></Counter> */}
+      <UseStateHooksArray></UseStateHooksArray>
+      {/* hello
+      <button className='btn' onClick={hello}>ok</button> */}
     </div>
   );
 }

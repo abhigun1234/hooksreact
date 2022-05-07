@@ -2,13 +2,14 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 
 function HooksApicourse(props) {
-    const [courses, setCourse] = useState([])
+    const [products, setProduct] = useState([])
     useEffect(() => {
 
-        axios.get('https://dronaonlineadmin.herokuapp.com/courses/').then(res => {
+        axios.get('https://justolearnapp.herokuapp.com/api/addproduct').then(res => {
 
             console.log("res", res)
-            setCourse(res.data.courseDetails)
+            setProduct(res.data.result)
+            console.log("courses",products)
         }).catch(error => {
             console.log("error", error)
         })
@@ -16,12 +17,15 @@ function HooksApicourse(props) {
 
     return (
         <div>
-            data
+           
             <ul>
                 {
-                    courses.map(course =>  <li>{course.name}</li> )
+                     products.map(product =>  <li>{product.name}</li> )
                     
-
+                    //  products.forEach((product) => {
+                    //     // names.push(<h3 className='student_name'>{data.name}</h3>)
+                    //     product =>  <li>{product.name}</li>
+                    //   })
                 }
             </ul>
         </div>

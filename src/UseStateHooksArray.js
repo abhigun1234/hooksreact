@@ -1,6 +1,13 @@
+import axios from 'axios';
 import React, { useState } from 'react';
+import { useEffect } from 'react/cjs/react.production.min';
 
 function UseStateHooksArray(props) {
+    // useEffect(()=>{
+
+    //     axios.
+
+    // })
     const [personInfo, setPersonInfo] = useState([
         { name: 'abhi', email: 'abhi@gmail.com',phone:'8888888' }, 
     { name: 'ravi', email: 'ravi@gmail.com' ,phone:'8888888'},
