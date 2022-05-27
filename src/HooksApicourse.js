@@ -1,10 +1,11 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-
+import Table from 'react-bootstrap/Table'
 function HooksApicourse(props) {
     const [products, setProduct] = useState([])
+    
     useEffect(() => {
-
+         
         axios.get('https://justolearnapp.herokuapp.com/api/addproduct').then(res => {
 
             console.log("res", res)
@@ -18,18 +19,37 @@ function HooksApicourse(props) {
     return (
         <div>
            
-            <ul>
-                {
-                     products.map(product =>  <li>{product.name}</li> )
+           <Table className="table">
+                <thead>
+                    <tr>
+                        <th>name</th>
+                        <th>price</th>
+                        <th>description</th>
                     
-                    //  products.forEach((product) => {
-                    //     // names.push(<h3 className='student_name'>{data.name}</h3>)
-                    //     product =>  <li>{product.name}</li>
-                    //   })
-                }
-            </ul>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    {
+
+products.map((product)=>{
+
+                        return(<tr >
+                            <td>{product.name}</td>
+                            <td>{product.price}</td>
+                            <td>{product.description}</td>
+                           
+                        </tr>)
+                     })
+                    }
+                 
+
+                </tbody>
+
+            </Table>
+
         </div>
     );
 }
 
-export default HooksApicourse;
+export default React.memo(HooksApicourse)

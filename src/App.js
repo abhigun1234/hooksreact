@@ -18,6 +18,9 @@ import Refs from './Refs';
 import UseMemoDemo from './UseMemoDemo';
 import RefsDemo from './RefsDemo';
 import Parent from './Parent';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import UseStateDemo from './UseStateDemo';
+import UseEffectWithoutArg from './UseEffectWithoutArg';
 function App() {
   function hello(){
     alert("hello")
@@ -28,7 +31,7 @@ function App() {
       {/* <UseStateHookObj></UseStateHookObj> */}
       {/* <HooksDemoCounter></HooksDemoCounter> */}
       {/* <UseEffectHook></UseEffectHook> */}
-      {/* <UseStateHooksArray></UseStateHooksArray> */}
+      {/* <UseEffectWithoutArg></UseEffectWithoutArg> */}
       {/* <HooksStateDemo></HooksStateDemo> */}
       {/* <UsereducerHooks></UsereducerHooks> */}
       {/* <Refs></Refs> */}
@@ -39,9 +42,10 @@ function App() {
       {/* <Parent></Parent> */}
       {/* <UseMemoDemo></UseMemoDemo> */}
       {/* <Counter></Counter> */}
-      <UseStateHooksArray></UseStateHooksArray>
+      {/* <UseStateHooksArray></UseStateHooksArray> */}
       {/* hello
       <button className='btn' onClick={hello}>ok</button> */}
+      <HooksApicourse></HooksApicourse>
     </div>
   );
 }

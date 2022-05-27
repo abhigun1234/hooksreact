@@ -2,15 +2,15 @@ import React, { useState } from 'react';
 
 function UseStateHookObj(props) {
 
-    const [person,setInfo]=useState({firstName:'',lastName:'',age:'',gender:''})
+    const [person,setInfo]=useState({firstName:'',lastName:'',age:'23',gender:'M'})
     function setFirstName(e){
-
+           console.log("e",e)
           setInfo({...person,firstName:e.target.value})
 
 
     }
     function lastName(e){
-
+        console.log("e",e)
         setInfo({...person,lastName:e.target.value})
 
 
@@ -25,6 +25,8 @@ function UseStateHookObj(props) {
             <input onChange={lastName} type="text" value={person.lastName} placeholder="enter your last name"></input>
             <h2>Your first name is -  {person.firstName}</h2>
             <h2>Your last name is -  {person.lastName}</h2>
+            {/* <h2>Your first name is -  {person.gender}</h2>
+            <h2>Your last name is -  {person.age}</h2> */}
         </div>
     );
 }
