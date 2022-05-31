@@ -21,6 +21,9 @@ import Parent from './Parent';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import UseStateDemo from './UseStateDemo';
 import UseEffectWithoutArg from './UseEffectWithoutArg';
+import Player from './Player';
+import UseFormHooks from './UseFormHooks';
+import FormHookDemo from './FormHookDemo';
 function App() {
   function hello(){
     alert("hello")
@@ -45,7 +48,7 @@ function App() {
       {/* <UseStateHooksArray></UseStateHooksArray> */}
       {/* hello
       <button className='btn' onClick={hello}>ok</button> */}
-      <HooksApicourse></HooksApicourse>
+      <Refs></Refs>
     </div>
   );
 }

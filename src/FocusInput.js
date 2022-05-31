@@ -9,6 +9,7 @@ function FocusInput(props) {
     return (
         <div>
             <input ref={inputRef} type="text"></input>
+            {/* <input  type="text"></input> */}
         </div>
     );
 }
