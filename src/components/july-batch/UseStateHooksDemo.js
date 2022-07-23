@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 function UseStateHooksDemo(props) {
  
@@ -8,7 +8,10 @@ function UseStateHooksDemo(props) {
    const [fruits,setFruits]=useState(["mango","banana","apple"])
    const [persons,setPerson]=useState([{name:"ram",city:"pune"},{name:"raj",city:"mumbai"}])
    
-   
+   useEffect(()=>{
+
+    console.log("use effect hooks called")
+   })
  const  setCounterData=()=>{
 
          setCounterOfData(count+1)

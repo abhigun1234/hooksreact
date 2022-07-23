@@ -26,6 +26,7 @@ import UseFormHooks from './UseFormHooks';
 import FormHookDemo from './FormHookDemo';
 import Login from './Login';
 import UseStateHooksDemo from './components/july-batch/UseStateHooksDemo';
+import UseEffectHooksDemo from './components/july-batch/UseEffectHooksDemo';
 function App() {
   function hello(){
     alert("hello")
@@ -60,7 +61,8 @@ function App() {
       {/* <button className='btn' onClick={clickMe}>ok</button> */}
       
       {/* <Login name="abhi"/> */}
-      <UseStateHooksDemo></UseStateHooksDemo>
+      {/* <UseStateHooksDemo></UseStateHooksDemo> */}
+      <UseEffectHooksDemo></UseEffectHooksDemo>
     </div>
   );
 }
