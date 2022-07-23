@@ -1,6 +1,7 @@
 import React, { useReducer } from 'react';
 const intialState=0
 const reducer=(state,action)=>{
+
     console.log("state",state)
     console.log("action",action)
     switch(action){
@@ -10,6 +11,8 @@ const reducer=(state,action)=>{
             return state-1;
         case 'reset':
             return intialState
+        case 'statemul':
+            return state+3
         default:
             return state
 
@@ -24,6 +27,7 @@ function UsereducerHooks(props) {
             <button onClick={()=>dispatch('increment')}>Increment</button>
             <button  onClick={()=>dispatch('decrement')}>Decrement</button>
             <button  onClick={()=>dispatch('reset')}>Reset</button>
+            <button  onClick={()=>dispatch('statemul')}>Mul</button>
                 {/* <button >Increment</button>
             <button  >Decrement</button>
             <button  >Reset</button> */}

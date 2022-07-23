@@ -4,6 +4,7 @@ function UseStateDemo(props) {
      const  [counter,SetCounter]= useState({})
      const  [person,setPersonData]= useState({name:'abhi'})
      const [name,setName]=useState("ravi")
+ 
      function onCallSetState(){
 
         setName("abhi")

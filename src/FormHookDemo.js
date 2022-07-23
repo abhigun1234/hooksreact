@@ -6,6 +6,7 @@ function FormHookDemo(props) {
         defaultValues: {
           firstName: '',
           lastName: '',
+          email:''
 
         }
       });
@@ -17,8 +18,8 @@ function FormHookDemo(props) {
         <form onSubmit={handleSubmit(onSubmit)}>
         <input {...register("firstName", { required: true })} placeholder="First name" />
   
-        <input {...register} placeholder="Last name" />
-   
+        <input {...register("lastName")} placeholder="Last name" />
+        <input {...register("email")} placeholder="email" />
 
      
        

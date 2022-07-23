@@ -1,5 +1,7 @@
+import { prettyDOM } from '@testing-library/react';
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import axios from 'axios'
 
 function UseFormHooks(props) {
     const { register, handleSubmit ,formState: { errors }} = useForm({
@@ -14,13 +16,17 @@ function UseFormHooks(props) {
       });
       function onSubmit(data){
           console.log("data",data)
+          //call api
+          //axios.get('https://upskill-ecommerce-app.herokuapp.com/api/addproduct').then()
+        //  axios.post('https://upskill-ecommerce-app.herokuapp.com/api/addproduct',data).then()
       }
     
       return (
         <form onSubmit={handleSubmit(onSubmit)}>
           <input {...register("firstName", { required: true })} placeholder="First name" />
-    
-          <input {...register("lastName", { minLength: 2 })} placeholder="Last name" />
+          {errors.firstName && <span>Invalid first name</span>}
+          <input {...register("lastName", { minLength: 5 })} placeholder="Last name" />
+          {errors.lastName && <span>Invalid last name</span>}
           <input
     placeholder="Email"
     {...register('email', {
@@ -48,7 +54,7 @@ function UseFormHooks(props) {
           <input {...register("radio")} type="radio" value="A" />
           <input {...register("radio")} type="radio" value="B" />
           <input {...register("radio")} type="radio" value="C" />
-          {errors.lastName && <span>Invalid last name</span>}
+         {/* <img src={prettyDOM.ImgUrl}></img> */}
           <input type="submit" />
         </form>
       );

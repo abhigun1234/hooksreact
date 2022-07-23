@@ -24,12 +24,20 @@ import UseEffectWithoutArg from './UseEffectWithoutArg';
 import Player from './Player';
 import UseFormHooks from './UseFormHooks';
 import FormHookDemo from './FormHookDemo';
+import Login from './Login';
+import UseStateHooksDemo from './components/july-batch/UseStateHooksDemo';
 function App() {
   function hello(){
     alert("hello")
   }
+  function clickMe(){
+    alert("hello ravi")
+  }
   return (
     <div className="App">
+
+      
+        
       {/* <UseStateHookDemo></UseStateHookDemo>       */}
       {/* <UseStateHookObj></UseStateHookObj> */}
       {/* <HooksDemoCounter></HooksDemoCounter> */}
@@ -48,7 +56,11 @@ function App() {
       {/* <UseStateHooksArray></UseStateHooksArray> */}
       {/* hello
       <button className='btn' onClick={hello}>ok</button> */}
-      <Refs></Refs>
+      {/* <UsereducerHooks></UsereducerHooks> */}
+      {/* <button className='btn' onClick={clickMe}>ok</button> */}
+      
+      {/* <Login name="abhi"/> */}
+      <UseStateHooksDemo></UseStateHooksDemo>
     </div>
   );
 }
