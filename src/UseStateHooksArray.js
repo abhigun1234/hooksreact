@@ -13,7 +13,9 @@ function UseStateHooksArray(props) {
     { id:2,name: 'ravi', email: 'ravi@gmail.com' ,phone:'8888888',city:'pune'},
     {id:3, name: 'ram', email: 'ram@gmail.com' ,phone:'8888888',city:'nagpur'},
     { id:4,name: 'neha', email: 'neha@gmail.com' ,phone:'8888888',city:'solapur'},
-    { id:5 ,name: 'priyanka', email: 'priyanka@gmail.com' ,phone:'8888888',city:'kolhapur'}])
+    { id:5 ,name: 'priyanka', email: 'priyanka@gmail.com' ,phone:'8888888',city:'kolhapur'},
+    { id:5 ,name: 'priyanka', email: 'priyanka@gmail.com' ,phone:'8888888',city:'rampur'}
+])
     return (
         <div>
             {/* {personInfo.map(person =>
@@ -46,6 +48,7 @@ personInfo.map((person)=>{
 
                         return(<tr key={person.id}>
                             <td>{person.id}</td>
+                            <td>{person.name}</td>
                             <td>{person.email}</td>
                             <td>{person.phone}</td>
                             <td>{person.city}</td>
