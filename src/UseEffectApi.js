@@ -2,12 +2,12 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 
 function UseEffectApi(props) {
-    const [courses, setCourses] = useState([])
+    const [users, setData] = useState([])
     useEffect(() => {
-        axios.get('https://dronaonlineadmin.herokuapp.com/courses/').then(res => {
+        axios.get('https://jsonplaceholder.typicode.com/posts/').then(res => {
 
             console.log("res", res)
-            setCourses(res.data.courseDetails)
+            setData(res.data)
         }).catch(error => {
             console.log("error", error)
         })
@@ -15,9 +15,9 @@ function UseEffectApi(props) {
     return (
         <div>
             < ul>{
-                courses.map(course =>
+                users.map(user =>
                     <div>
-                    <li>{course.fees}</li>
+                    <li>{user.title}</li>
                   
                     </div>
                 )

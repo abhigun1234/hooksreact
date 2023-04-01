@@ -28,6 +28,9 @@ import Login from './Login';
 import UseStateHooksDemo from './components/july-batch/UseStateHooksDemo';
 import UseEffectHooksDemo from './components/july-batch/UseEffectHooksDemo';
 import Users from './Users';
+import LoginUseEffect from './LoginUseEffect';
+import ProductData from './ProductData';
+import DemoUseEffect from './DemoUseEffect';
 function App() {
   function hello(){
     alert("hello")
@@ -64,7 +67,16 @@ function App() {
       {/* <Login name="abhi"/> */}
       {/* <UseStateHooksDemo></UseStateHooksDemo> */}
       {/* <UseEffectHooksDemo></UseEffectHooksDemo> */}
-      <UseStateHooksArray></UseStateHooksArray>
+      {/* <UseStateHooksArray></UseStateHooksArray> */}
+      {/* <UseEffectApi></UseEffectApi> */}
+      {/* <Login></Login> */}
+      {/* <LoginUseEffect></LoginUseEffect> */}
+      {/* <UseStateDemo></UseStateDemo> */}
+        {/* <UseStateHookDemo></UseStateHookDemo> */}
+        {/* <UseStateHooksArray></UseStateHooksArray> */}
+        {/* <DemoUseEffect></DemoUseEffect> */}
+      <UseEffectApi></UseEffectApi>
+      <div>Hello komal welcome</div>
     </div>
   );
 }

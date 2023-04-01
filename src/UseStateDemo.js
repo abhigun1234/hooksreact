@@ -11,10 +11,7 @@ function UseStateDemo(props) {
      }
     return (
         <div>
-           {counter} 
-           {name}
-           {/* {person.name} */}
-           <button onClick={onCallSetState}>setName</button>
+         {name}
         </div>
     );
 }

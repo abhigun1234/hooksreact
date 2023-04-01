@@ -1,17 +1,13 @@
 import React, { useState, useEffect } from "react";
 
-let Login = () => {
+let LoginUseEffect = () => {
   var [email, setEmail] = useState("");
   var [password, setPassword] = useState("");
-function callApi(){
-    
-}
-  useEffect(() => {
-    console.log("useEffect hook getting called")
-    console.log(email, password);
 
-    callApi()
-  },[email,password]);
+  useEffect(() => {
+    console.log("useEffect")
+    console.log(email, password);
+  },[email]);
   return (
     <div className="row">
       <div className="col-lg-5 col-md-7 mx-auto">
@@ -66,4 +62,4 @@ function callApi(){
   );
 };
 
-export default Login;
+export default LoginUseEffect;

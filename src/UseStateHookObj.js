@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 function UseStateHookObj(props) {
 
-    const [person,setInfo]=useState({firstName:'',lastName:'',age:'23',gender:'M'})
+    const [person,setInfo]=useState({firstName:'ram',lastName:'sharma',age:'23',gender:'M'})
     function setFirstName(e){
            console.log("e",e)
           setInfo({...person,firstName:e.target.value})
