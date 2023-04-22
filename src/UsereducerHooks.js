@@ -1,5 +1,5 @@
 import React, { useReducer } from 'react';
-const intialState=0
+const intialState=1
 const reducer=(state,action)=>{
 
     console.log("state",state)

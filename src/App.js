@@ -13,7 +13,6 @@ import Counter from './Counter';
 import HoksObj from './HoksObj';
 import StateDemoClass from './StateDemoClass';
 import ChangeState from './ChangeState';
-import UsereducerHooks from './UsereducerHooks';
 import Refs from './Refs';
 import UseMemoDemo from './UseMemoDemo';
 import RefsDemo from './RefsDemo';
@@ -31,6 +30,7 @@ import Users from './Users';
 import LoginUseEffect from './LoginUseEffect';
 import ProductData from './ProductData';
 import DemoUseEffect from './DemoUseEffect';
+import DemoUseReducerHook from './DemoUseReducerHook';
 function App() {
   function hello(){
     alert("hello")
@@ -75,8 +75,8 @@ function App() {
         {/* <UseStateHookDemo></UseStateHookDemo> */}
         {/* <UseStateHooksArray></UseStateHooksArray> */}
         {/* <DemoUseEffect></DemoUseEffect> */}
-      <UseEffectApi></UseEffectApi>
-      <div>Hello komal welcome</div>
+      <DemoUseReducerHook></DemoUseReducerHook>
+      {/* <div>Hello komal welcome</div> */}
     </div>
   );
 }
